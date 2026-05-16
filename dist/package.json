@@ -1,0 +1,53 @@
+{
+    "name": "n8n-nodes-kbo-leads",
+    "version": "1.0.0",
+    "description": "n8n community node voor de KBO Leads API — 1.9M Belgische bedrijven",
+    "keywords": [
+        "n8n-community-node-package",
+        "n8n-nodes",
+        "kbo",
+        "belgium",
+        "leads",
+        "b2b",
+        "prospecting"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "Noel Wydaeghe"
+    },
+    "homepage": "https://leads.lokalegroei.be/api",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/noelwydaeghe/n8n-nodes-kbo-leads"
+    },
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "format": "prettier nodes credentials --write",
+        "lint": "eslint nodes credentials package.json",
+        "lintfix": "eslint nodes credentials package.json --fix",
+        "prepublishOnly": "npm run build && npm run lint"
+    },
+    "files": [
+        "dist"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "credentials": [
+            "dist/credentials/KboLeadsApi.credentials.js"
+        ],
+        "nodes": [
+            "dist/nodes/KboLeads/KboLeads.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@n8n/node-cli": "^0.30.1",
+        "@types/node": "^22.1.0",
+        "eslint-plugin-n8n-nodes-base": "^1.16.2",
+        "gulp": "^5.0.1",
+        "gulp-cli": "^3.1.0",
+        "n8n-workflow": "*",
+        "typescript": "^5.6.2"
+    }
+}
