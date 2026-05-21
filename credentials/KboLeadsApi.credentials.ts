@@ -1,4 +1,9 @@
-import { ICredentialType, INodeProperties } from 'n8n-workflow';
+import {
+  IAuthenticateGeneric,
+  ICredentialTestRequest,
+  ICredentialType,
+  INodeProperties,
+} from 'n8n-workflow';
 
 export class KboLeadsApi implements ICredentialType {
   name = 'kboLeadsApi';
@@ -15,16 +20,17 @@ export class KboLeadsApi implements ICredentialType {
       placeholder: 'kbo_xxxxxxxxxxxxxxxx',
     },
   ];
-  authenticate = {
-    type: 'generic' as const,
+  authenticate: IAuthenticateGeneric = {
+    type: 'generic',
     properties: {
       headers: { 'X-API-Key': '={{$credentials.apiKey}}' },
     },
   };
-  test = {
+  test: ICredentialTestRequest = {
     request: {
       baseURL: 'https://api.leads.automatisatiesvlaanderen.be',
       url: '/regions',
+      method: 'GET',
     },
   };
 }
