@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-kbo-leads",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "n8n community node voor de KBO Leads API — 1.9M Belgische bedrijven",
   "keywords": [
     "n8n-community-node-package",
@@ -18,7 +18,7 @@
   "homepage": "https://leads.lokalegroei.be/api",
   "repository": {
     "type": "git",
-    "url": "https://github.com/noelwydaeghe/n8n-nodes-kbo-leads"
+    "url": "https://github.com/NoelWydaeghe/n8n-nodes-kbo-leads"
   },
   "main": "index.js",
   "scripts": {
