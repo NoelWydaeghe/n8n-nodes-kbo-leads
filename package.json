@@ -13,7 +13,8 @@
   ],
   "license": "MIT",
   "author": {
-    "name": "Noel Wydaeghe"
+    "name": "Noel Wydaeghe",
+    "email": "noel@lokalegroei.be"
   },
   "homepage": "https://leads.lokalegroei.be/api",
   "repository": {
