@@ -24,7 +24,7 @@ export class KboLeadsApi implements ICredentialType {
   test = {
     request: {
       baseURL: 'https://api.leads.automatisatiesvlaanderen.be',
-      url: '/leads/stats',
+      url: '/regions',
     },
   };
 }
