@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-kbo-leads",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "n8n community node voor de KBO Leads API — 1.9M Belgische bedrijven",
   "keywords": [
     "n8n-community-node-package",
