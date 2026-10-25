@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-kbo-leads.kboLeads",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Sales", "Marketing & Content"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://leads.lokalegroei.be/api"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/NoelWydaeghe/n8n-nodes-kbo-leads#readme"
+			}
+		]
+	}
+}
